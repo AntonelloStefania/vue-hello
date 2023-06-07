@@ -16,7 +16,7 @@
     <main :class="d_flex_center">
         <div class="container">
             <!-- form -->
-            <div class="row form-row">
+            <div class="row">
                 <div class="mb-3">
                     <label for="text" class="form-label">Destinatario</label>
                     <input type="text" class="form-control" v-model="dear" placeholder="Caro...">
@@ -28,6 +28,9 @@
                   <div class="mb-3">
                     <label for="text" class="form-label">Mittente</label>
                     <input type="text" class="form-control" v-model="from" placeholder="Firma">
+                  </div>
+                  <div class="col-3 offset-5 mt-3">
+                 <button  @click="generateImg" type="button" class="btn change-img mb-2">Cambia Immagine</button>
                   </div>
             </div>
             <!-- contenitore cartolina -->
@@ -44,7 +47,7 @@
                         <div :class="font" class="col description border rounded my-1 border-black">{{main_text}}</div>
                         <!-- doppia colonna per data e mittente -->
                         <div class="col-12 d-flex justify-content-around bottom-postcard">
-                            <div class="col-3 date" :class="border">{{date}}</div>
+                            <div class="col-3 date" :class="border, font">{{date}}</div>
                             <div class="col-6 from" :class="border, font">Mittente: {{from}}</div>
                         </div>
                     </div>

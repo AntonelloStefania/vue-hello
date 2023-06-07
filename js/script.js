@@ -5,7 +5,7 @@ createApp({
         return {
             title:"<h1>Crea la tua cartolina digitale</h1>",
             d_flex_center: "d-flex-content-items-center",
-            img:'<img src="https://picsum.photos/390/300" alt="image">',
+            img:'',
             dear:'',
             main_text: '',
             date : '',
@@ -18,9 +18,19 @@ createApp({
       realDate(){
         const realDate= new Date();
         this.date = realDate.toUTCString().slice(5, 16);
-      }
+      },
+
+       generateImg(){
+        let number=Math.floor( Math.random()*100)
+        
+            let random_img = `<img src="https://picsum.photos/id/${number}/390/300" alt="image">`;
+            console.log(number)
+            
+            this.img= random_img
+       }
     },
     mounted() {
-        this.realDate(); 
+        this.realDate();
+        this.generateImg();
       },
 }).mount("#app")

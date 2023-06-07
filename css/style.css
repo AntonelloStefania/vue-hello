@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    height: 100%;
+    background-color: red;
+}
+
+header{
+    height: 3rem;
+    background-color: rgb(46, 45, 45);
+}
+
+.bkg-blue{
+    background-color: rgb(105, 105, 216);
+    height: 100%;
+    margin-top: 50px;
+}
+
+.bkg-green{
+    background-color: rgb(143, 185, 143);
+    height: 300px;
+    
+}
+
+.d-flex-content-items-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    background-color: pink;
+    height: 100%;
+}
+.text{
+    background-color: brown;
+    height: 100%;
+    padding: 5px 20px
+}
+
+.brdr-bottom{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.to, .bottom-postcard{
+    height: 30px;
+}
+
+.description{
+    word-wrap: break-word; /* Abilita il wrapping delle parole */
+    white-space: pre-wrap; /* Permette il wrapping del testo */
+    padding: 8px;
+}

@@ -29,6 +29,7 @@ createApp({
             
             this.img= random_img
        },
+
        submitButton(){
         let alert= document.getElementById("alert");
         let alert_msg= document.getElementById("alert-msg");
@@ -42,8 +43,9 @@ createApp({
                 this.dear='';
                 this.main_text='';
                 this.from=''
-        }
+        } 
        },
+
        closeAlert(){
         let alert= document.getElementById("alert");
         let close = document.getElementById("close-alert");

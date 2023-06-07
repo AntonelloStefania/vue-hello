@@ -45,6 +45,7 @@ header{
 }
 .change-img:hover, .send:hover, .close-alert:hover{
     border: 1px solid #381c37bb;
+    background-color: #e6c9e5bb;
 }
 
 /* corpo principale */
@@ -71,7 +72,9 @@ header{
 }
 
 img{
-    width:100%
+    width:100%;
+    padding: 10px;
+    border-radius: 1rem;
 }
 
 label{

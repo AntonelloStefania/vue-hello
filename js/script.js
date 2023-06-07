@@ -10,7 +10,8 @@ createApp({
             main_text: '',
             date : '',
             from:'',
-            border:'brdr-bottom'
+            border:'brdr-bottom',
+            font:'f-family'
         }
     },
     methods: {

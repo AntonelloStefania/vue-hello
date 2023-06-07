@@ -6,48 +6,51 @@
 
 body{
     height: 100vh;
+    font-family: 'Wix Madefor Text', sans-serif
 }
 
 main{
     height: 100%;
-    background-color: red;
+    background-color: #BAA7B0;
 }
-
-header{
-    height: 3rem;
-    background-color: rgb(46, 45, 45);
-}
-
-.bkg-blue{
-    background-color: rgb(105, 105, 216);
-    height: 100%;
-    margin-top: 50px;
-}
-
-.bkg-green{
-    background-color: rgb(143, 185, 143);
-    height: 300px;
-    
-}
-
+/* utilities */
 .d-flex-content-items-center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img{
-    background-color: pink;
-    height: 100%;
-}
-.text{
-    background-color: brown;
-    height: 100%;
-    padding: 5px 20px
-}
-
 .brdr-bottom{
     border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.f-family{
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+/* header */
+header{
+    height: 3rem;
+    background-color:  #6d2b6abb;
+    border-bottom: 3px solid  #381c37bb;
+    color: white;
+}
+
+/* main */
+.form-row{
+    transform: translateY(-30%);
+}
+/* corpo principale */
+.bkg-green{
+    border:4px solid #381c37bb;
+    box-shadow: 0 0 20px  #241723bb ;
+}
+
+/* varie componenti della cartolina */
+
+.text{
+    padding: 5px 20px;
+    background-color: #EDE8EA;
 }
 
 .to, .bottom-postcard{
@@ -59,3 +62,14 @@ header{
     white-space: pre-wrap; /* Permette il wrapping del testo */
     padding: 8px;
 }
+
+img{
+    width:100%
+}
+
+label{
+    font-weight: bold;
+}
+
+
+

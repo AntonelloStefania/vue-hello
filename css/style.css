@@ -36,13 +36,13 @@ header{
 }
 
 /* main */
-.change-img{
+.change-img, .send, .close-alert{
     border: 1px solid #381c37bb;
     color: #381c37bb;
     font-weight: bold;
     background-color: #EDE8EA;
 }
-.change-img:hover{
+.change-img:hover, .send:hover, .close-alert:hover{
     border: 1px solid #381c37bb;
 }
 
@@ -83,5 +83,27 @@ label{
     align-items: end;
 }
 
+.alert{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    bottom: 50vh;
+    left: 50%;
+    border: 1px solid #381c37bb;
+    border-radius: 1rem;
+    display: none;
+    box-shadow: 0px 0px 8px #381c37bb ;
+}
+
+.close-alert{
+    position: absolute;
+    top: 65%;
+    transform: translateX(-40%);
+}
+
+.alert.appear{
+    display:block;
+}
 
 

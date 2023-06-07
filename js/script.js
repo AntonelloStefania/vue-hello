@@ -55,7 +55,7 @@ createApp({
        }
     },
     mounted() {
-        this.realDate();
-        this.generateImg();
+         this.realDate();
+         this.generateImg();
       },
 }).mount("#app")

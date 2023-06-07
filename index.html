@@ -53,15 +53,15 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group mt-3 col-6 offset-3">
-                <label for="email mb-2">Email destinatario:</label>
-                <input v-model="email" type="email" class="form-control" id="email">
-                <button @click="submitButton" type="submit" class="btn col-2 offset-5 mt-3 send">Submit</button>
-            </div>
-            <div class="alert" id="alert">
-                <h4>messaggio inviato con successo a: {{email}}</h4>
-                <button @click="closeAlert" type="submit" class="btn col-2 offset-5 mt-3 close-alert" id="close-alert">ok</button>
-            </div>
+                <div class="form-group mt-3 col-6 offset-3">
+                    <label for="email mb-2">Email destinatario:</label>
+                    <input v-model="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <button @click="submitButton" type="submit" class="btn col-2 offset-5 mt-3 send">Submit</button>
+                </div>
+                <div class="alert" id="alert">
+                    <h4 id="alert-msg">la cartolina è stata inviata a: {{email}}</h4>
+                    <button @click="closeAlert" type="submit" class="btn col-2 offset-5 mt-3 close-alert" id="close-alert">ok</button>
+                </div>
         </div>
     </main>
     

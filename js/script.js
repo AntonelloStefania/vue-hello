@@ -31,16 +31,25 @@ createApp({
        },
        submitButton(){
         let alert= document.getElementById("alert");
-        alert.classList.add("appear");
+        let alert_msg= document.getElementById("alert-msg");
+        let valid_symbol= '@'
+          
+        if(this.email.trim() === ""){
+               alert.classList.add("appear");
+               alert_msg.innerText='inserire una mail valida'
+        } else if(this.email.match(valid_symbol)){
+                alert.classList.add("appear");
+                this.dear='';
+                this.main_text='';
+                this.from=''
+        }
        },
        closeAlert(){
         let alert= document.getElementById("alert");
         let close = document.getElementById("close-alert");
         alert.classList.remove("appear");
         this.email='';
-        this.dear='';
-        this.main_text='';
-        this.from=''
+       
        }
     },
     mounted() {

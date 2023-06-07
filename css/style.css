@@ -12,6 +12,7 @@ body{
 main{
     height: 100%;
     background-color: #BAA7B0;
+    position: relative;
 }
 /* utilities */
 .d-flex-content-items-center{
@@ -63,7 +64,7 @@ header{
     height: 30px;
 }
 
-.description{
+.description, .alert{
     word-wrap: break-word; /* Abilita il wrapping delle parole */
     white-space: pre-wrap; /* Permette il wrapping del testo */
     padding: 8px;
@@ -87,9 +88,10 @@ label{
     width: 300px;
     height: 200px;
     background-color: white;
-    position: relative;
-    bottom: 50vh;
+    position: absolute;
+    bottom: 50%;
     left: 50%;
+    transform: translate(-50%, 40%);
     border: 1px solid #381c37bb;
     border-radius: 1rem;
     display: none;
